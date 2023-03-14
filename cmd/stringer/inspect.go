@@ -22,7 +22,7 @@ var inspectCmd = &cobra.Command{
 		if res == 1 {
 			pluralS = ""
 		}
-		fmt.Printf("'%s' has a %d %s%s.\n", i, res, kind, pluralS)
+		fmt.Printf("'%s' has %d %s%s.\n", i, res, kind, pluralS)
 	},
 }
 
