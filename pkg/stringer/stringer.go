@@ -27,3 +27,19 @@ func inspectNumbers(input string) (count int) {
 	}
 	return count
 }
+
+func Wordcount(input string) (count int) {
+
+	word := false
+	for _, c := range input {
+		if c == ' ' && word {
+			word = false
+		}
+		if c != ' ' && !word {
+			word = true
+			count++
+		}
+	}
+	return count
+
+}
