@@ -17,7 +17,7 @@ var wordCountCmd = &cobra.Command{
 		i := args[0]
 		res := stringer.Wordcount(i)
 
-		fmt.Printf("'%s' has a %d words.\n", i, res)
+		fmt.Printf("'%s' has %d words.\n", i, res)
 	},
 }
 
